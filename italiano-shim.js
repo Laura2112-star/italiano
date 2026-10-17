@@ -158,7 +158,7 @@
     if (gate) return;
     gate = document.createElement("div"); gate.className = "foggate";
     gate.innerHTML = `<div class="box"><h2>Italiano in Viaggio</h2>
-      <p>${msg || "Tu progreso se guarda en tu Google Drive. Entra con tu cuenta de Google para verlos."}</p>
+      <p>${msg || "Tu progreso se guarda en tu Google Drive. Entra con tu cuenta de Google para verlo."}</p>
       <button class="fogbtn" type="button" id="fogin">Entrar con Google</button><p style="font-size:12px" id="fogerr"></p></div>`;
     document.body.append(gate);
     gate.querySelector("#fogin").onclick = () => signIn().then(start).catch(() => {
